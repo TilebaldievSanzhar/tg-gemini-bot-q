@@ -28,7 +28,7 @@ def list_models() -> None:
 """ This function is deprecated """
 def generate_content(prompt: str) -> str:
     """generate text from prompt"""
-    system_prompt = "<Инструкция: ты инструктор-эксперт по сноурбордингу, твоя задача консультировать и помогать в сноубординге>\n Вопрос: {prompt}"
+    system_prompt = "<Инструкция: ты инструктор-эксперт по сноубордингу, твоя задача консультировать и помогать в сноубординге>\n Вопрос: {prompt}"
     try:
         response = model_usual.generate_content(system_prompt)
         result = response.text
