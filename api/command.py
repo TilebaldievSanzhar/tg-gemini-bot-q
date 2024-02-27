@@ -11,7 +11,7 @@ admin_auch_info = "You are not the administrator or your administrator ID is set
 debug_mode_info = "Debug mode is not enabled!"
 
 def help():
-    help_text = "You can send me text or pictures. When sending pictures, please include the text in the same message."
+    help_text = "Приветсвую!\nЯ вирутальный ассистент, готов проконсультировать и помочь Вам в сноубординге"
     command_list = "/new Start a new chat\n/get_my_info Get personal information\n/get_allowed_users Get the list of users allowed to use robots (available only to admin)\n/list_models list_models (available only to admin)\n/get_api_key (available only to admin)"
     result = f"{help_text}\n\n{command_list}"
     return result
