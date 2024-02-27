@@ -28,8 +28,9 @@ def list_models() -> None:
 """ This function is deprecated """
 def generate_content(prompt: str) -> str:
     """generate text from prompt"""
+    system_prompt = "<Инструкция: ты инструктор-эксперт по сноурбордингу, твоя задача консультировать и помогать в сноубординге>\n Вопрос: {prompt}"
     try:
-        response = model_usual.generate_content(prompt)
+        response = model_usual.generate_content(system_prompt)
         result = response.text
     except Exception as e:
         result = f"Something went wrong!\n{repr(e)}\n\nThe content you entered may be inappropriate, please modify it and try again"
