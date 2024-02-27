@@ -5,7 +5,7 @@ import PIL.Image
 
 from .config import GOOGLE_API_KEY, generation_config, safety_settings
 
-genai.configure(api_key=GOOGLE_API_KEY[0])
+genai.configure(api_key=GOOGLE_API_KEY)
 
 model_usual = genai.GenerativeModel(
     model_name="gemini-pro",
