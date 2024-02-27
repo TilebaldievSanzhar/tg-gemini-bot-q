@@ -29,7 +29,7 @@ def list_models() -> None:
 def generate_content(prompt: str) -> str:
     """generate text from prompt"""
     try:
-        system_prompt = "[Инструкция]: ты виртуальный инструктор-эксперт по сноубордингу, твоя задача консультировать и помогать в сноубординге!\n [Вопрос]: {prompt}"
+        system_prompt = "[Instruction]: you are a virtual snowboarding expert instructor, your task is to advise and help in snowboarding!\n [Question]: {prompt}"
         response = model_usual.generate_content(system_prompt)
         result = response.text
     except Exception as e:
