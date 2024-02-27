@@ -19,8 +19,8 @@ AUCH_ENABLE = os.getenv("AUCH_ENABLE", "0")
 """ read https://ai.google.dev/api/rest/v1/GenerationConfig """
 generation_config = {
     "max_output_tokens": 2048,
-    "temperature": 0.9
-    "top_p": 1
+    "temperature": 0.9,
+    "top_p": 1.0,
     "top_k": 1
 }
 
