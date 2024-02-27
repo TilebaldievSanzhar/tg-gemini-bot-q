@@ -4,7 +4,7 @@ from re import split
 """ Required """
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
-GOOGLE_API_KEY = = split(r'[ ,;，；]+', os.getenv("GOOGLE_API_KEY", ''))
+GOOGLE_API_KEY = split(r'[ ,;，；]+', os.getenv("GOOGLE_API_KEY", ''))
 
 """ Optional """
 
